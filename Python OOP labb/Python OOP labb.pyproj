@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b561d326-7f49-47b3-b7ce-ad77faf7c432</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Python_OOP_labb.py</StartupFile>
+    <StartupFile>Labb.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="bball.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Labb.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Python_OOP_labb.py" />

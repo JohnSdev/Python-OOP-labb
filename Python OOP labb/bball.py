@@ -8,20 +8,21 @@ class BouncingBall:
         self.delta_x=delta_x
 
     def update(self, width, height):
-        self.delta_y = self.delta_y + 9
+        
         self.x += self.delta_x
         self.y += self.delta_y
+        #self.delta_y = self.delta_y + 0.009
 
         
 
-        if self.x < 0:
+        if (self.x - self.radius) < 0:
             self.delta_x = -1 * self.delta_x
-        elif self.x > width:
+        elif (self.x - self.radius) > width:
             self.delta_x = -1 * self.delta_x
 
-        if self.y < 0:
+        if (self.y - self.radius) < 0:
             self.delta_y = -1 * self.delta_y
-        elif self.y > width:
+        elif (self.y - self.radius) > width:
             self.delta_y = -1 * self.delta_y
 
 

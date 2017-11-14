@@ -28,7 +28,7 @@ class Game():
         # Store the screen object for drawing too
         self.screen = pygame.display.set_mode([width,height])
         self.balls=[]
-        self.balls.append(BouncingBall(100,100,50,1,1))
+        self.balls.append(BouncingBall(100,50,30,1,2))
 
     def runGame(self):
         # Our "infinite" loop for the game logic and drawing
